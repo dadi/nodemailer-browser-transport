@@ -10,14 +10,14 @@ browser (Inspired by [Letter Opener](https://github.com/ryanb/letter_opener)).
 1. Install via NPM
 
     ```
-    $ npm install nodemailer-browser-transport
+    $ npm install @dadi/nodemailer-browser-transport
     ```
 
 2. Use it with Nodemailer
 
     ```javascript
     const nodemailer = require('nodemailer')
-    const nodemailerBrowser = require('nodemailer-browser-transport')
+    const nodemailerBrowser = require('@dadi/nodemailer-browser-transport')
 
     let tmpdir = require('path').join(process.cwd(), 'tmp', 'nodemailer')
 
