@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "mkdirp": "~0.3.4",
-    "jade": "~0.28.1",
-    "open": "0.0.4"
+    "open": "0.0.4",
+    "pug": "^2.0.4"
   },
   "devDependencies": {
     "coveralls": "^3.0.1",

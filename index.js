@@ -1,14 +1,14 @@
 'use strict'
 
 const fs = require('fs')
-const jade = require('jade')
-const open = require('open')
 const mkdirp = require('mkdirp')
 const packageData = require('./package.json')
+const open = require('open')
 const path = require('path')
+const pug = require('pug')
 
-const tmplPath = path.join(__dirname, 'template.jade')
-const template = jade.compile(fs.readFileSync(tmplPath, 'utf-8'))
+const tmplPath = path.join(__dirname, 'template.pug')
+const template = pug.compile(fs.readFileSync(tmplPath, 'utf-8'))
 
 module.exports = function (options) {
   return new BrowserTransport(options)
