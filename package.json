@@ -1,7 +1,7 @@
 {
   "name": "@dadi/nodemailer-browser-transport",
   "author": "James Lambie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Preview your Nodemailer emails in your browser.",
   "license": "BSD",
   "keywords": [
@@ -14,21 +14,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jimlambie/nodemailer-browser-transport.git"
+    "url": "git://github.com/dadi/nodemailer-browser-transport.git"
   },
   "main": "index.js",
   "scripts": {
-    "test": "standard '*.js' && ./node_modules/.bin/istanbul cover --report cobertura --report text --report html --report lcov ./node_modules/mocha/bin/_mocha test",
-    "posttest": "./scripts/coverage.js"
+    "test": "standard '*.js' && ./node_modules/mocha/bin/_mocha test"
   },
   "dependencies": {
     "mkdirp": "~0.3.4",
-    "open": "0.0.4",
+    "open": "^6.4.0",
     "pug": "^2.0.4"
   },
   "devDependencies": {
-    "coveralls": "^3.0.1",
-    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^5.2.0",
     "nodemailer": "^4.0.0",
     "should": "~13.2.0",

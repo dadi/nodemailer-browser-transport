@@ -3,12 +3,12 @@ const path = require('path')
 const fs = require('fs')
 const nodemailer = require('nodemailer')
 
-const nodemailerBrowser = require('./../index')
+const NodemailerBrowser = require('./../index')
 
 let tmpdir = path.join(__dirname, 'tmp', 'nodemailer')
-let transport = new nodemailerBrowser({
+let transport = new NodemailerBrowser({
   dir: tmpdir,
-  browser: false
+  browser: true
 })
 
 let mailer = nodemailer.createTransport(transport)
